@@ -140,10 +140,7 @@ header {
   opacity: 0.6;
   background-image: url("Assets/banner-pic.jpg");
 
-background-attachment: fixed;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
-   -o-background-attachment: fixed;
+
 
   background-position: center;
   -webkit-background-position: center;
