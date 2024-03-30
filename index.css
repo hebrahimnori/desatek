@@ -709,7 +709,7 @@ header {
   display: none;
 }
 .carousel-box {
-  margin-left: 40px;
+  /* margin-left: 40px; */
 }
 
 .gallery-cell {
@@ -753,7 +753,7 @@ header {
 
 /* position dots in gallery */
 .flickity-page-dots {
-  bottom: 5px !important;
+  bottom: 10px !important;
 }
 /* white circles */
 .flickity-page-dots .dot {
@@ -886,7 +886,7 @@ header {
   }
   .service-box {
     width: 100%;
-    border-radius: 50px;
+    border-radius: 0;
     transition: none;
     aspect-ratio: 4/5;
   }
