@@ -140,7 +140,10 @@ header {
   opacity: 0.6;
   background-image: url("Assets/banner-pic.jpg");
 
-
+  background-attachment: fixed;
+  -webkit-background-attachment: fixed;
+  -moz-background-attachment: fixed;
+  -o-background-attachment: fixed;
 
   background-position: center;
   -webkit-background-position: center;
@@ -154,7 +157,6 @@ header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  
 }
 .text-cont-banner {
   position: relative;
@@ -569,7 +571,7 @@ footer {
   background-attachment: fixed;
   -webkit-background-attachment: fixed;
   -moz-background-attachment: fixed;
-   -o-background-attachment: fixed;
+  -o-background-attachment: fixed;
 
   background-position: center;
   -webkit-background-position: center;
@@ -584,7 +586,6 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
 
-  
   position: relative;
   z-index: 1;
   margin-top: -200px;
@@ -704,6 +705,9 @@ footer {
   background: #eee;
   display: none;
 }
+.carousel-box {
+  margin-left: 40px;
+}
 
 .gallery-cell {
   width: 100%;
@@ -804,6 +808,18 @@ footer {
     font-size: 22px;
 
     line-height: 1.4;
+  }
+  .banner-cont::before {
+    background-attachment: scroll;
+    -webkit-background-attachment: scroll;
+    -moz-background-attachment: scroll;
+    -o-background-attachment: scroll;
+  }
+  footer {
+    background-attachment: scroll;
+    -webkit-background-attachment: scroll;
+    -moz-background-attachment: scroll;
+    -o-background-attachment: scroll;
   }
 }
 /* Media query for tablets and smaller desktops */
@@ -1072,6 +1088,9 @@ footer {
   }
 }
 @media (max-width: 460px) {
+  .project-main {
+    border-radius: 0 0 160px 0;
+  }
   .call-btn-header {
     font-size: 12px;
   }
@@ -1138,6 +1157,9 @@ footer {
   .footer-content h4 {
     font-size: 26px;
   }
+  footer {
+    height: 840px;
+  }
 }
 @media (max-width: 400px) {
   .user-text-cont h4 {
@@ -1167,9 +1189,6 @@ footer {
   }
 }
 @media (max-width: 376px) {
-  footer {
-    height: 800px;
-  }
   .visit-insta-btn-cont {
     transform: scale(0.7);
     right: -10px;
