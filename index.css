@@ -9,6 +9,9 @@
 body {
   background-color: #f5f5f5;
 }
+p {
+  margin-bottom: 0 !important;
+}
 
 /* animate Part */
 
@@ -563,7 +566,7 @@ header {
 .prj2 {
   border-radius: 20px 20px 20px 60px;
 }
-footer {
+.footer-cont-main {
   width: 100%;
   height: 1000px;
 
@@ -815,7 +818,7 @@ footer {
     -moz-background-attachment: scroll;
     -o-background-attachment: scroll;
   }
-  footer {
+  .footer-cont-main {
     background-attachment: scroll;
     -webkit-background-attachment: scroll;
     -moz-background-attachment: scroll;
@@ -1081,7 +1084,7 @@ footer {
   .service-content-cont p {
     font-size: 18px;
   }
-  footer {
+  .footer-cont-main {
     padding: 10px;
     padding-top: 200px;
     padding-bottom: 60px;
@@ -1158,7 +1161,7 @@ footer {
   .footer-content h4 {
     font-size: 26px;
   }
-  footer {
+  .footer-cont-main {
     height: 840px;
   }
 }
