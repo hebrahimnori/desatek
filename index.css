@@ -350,42 +350,15 @@ header {
   padding: 20px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
-.user-cont-reverse {
-  flex-direction: row-reverse;
-}
-.user-cont-reverse .user-image-cont {
-  border-radius: 20px 60px 20px 20px;
-}
-.user-cont .user-image-cont {
-  width: 40%;
-  aspect-ratio: 4/5;
-  height: auto;
-  background-color: white;
-  overflow: hidden;
-  border-radius: 60px 20px 20px 20px;
-  margin: 0 auto;
-}
-.user-cont-reverse .user-image-cont {
-  border-radius: 20px 60px 20px 20px;
-}
-.user-cont .user-image-cont img {
-  width: 100%;
-  height: 100%;
-  display: block;
 
-  object-fit: cover;
-  object-position: top;
-}
 .user-cont .user-text-cont {
-  width: 60%;
-  text-align: left;
-  padding-top: 10px;
+  text-align: center;
 }
-.user-text-cont a {
-  display: inline-block;
-}
+
 .user-text-cont h4 {
   font-size: 32px;
   color: #2d2d2d;
@@ -397,6 +370,7 @@ header {
   line-height: 1.6;
   font-weight: 300;
 }
+
 .user-numb {
   background-color: #367fa0;
   width: 40px;
@@ -414,6 +388,14 @@ header {
 .user-numb svg {
   width: 30px;
   height: 30px;
+}
+.user-call-mob {
+  display: none;
+}
+.user-call-desk {
+  color: #265a72;
+  font-weight: 700;
+  font-size: 20px;
 }
 .aboutus-cont article {
   width: 100%;
@@ -792,6 +774,9 @@ header {
   .user-text-cont h4 {
     font-size: 24px;
   }
+  .user-call-desk {
+    font-size: 16px;
+  }
   .role-text {
     font-size: 18px;
   }
@@ -863,6 +848,12 @@ header {
 
 /* Media query for mobile phones */
 @media (max-width: 700px) {
+  .user-call-mob {
+    display: block;
+  }
+  .user-call-desk {
+    display: none;
+  }
   .footer-content {
     right: 40px;
     align-items: flex-start;
@@ -935,11 +926,18 @@ header {
   .users-row {
     flex-direction: column;
     border-radius: 0;
+    gap: 10px;
   }
+
   .user-cont {
     width: 100%;
     padding: 20px;
-    border-radius: 40px !important;
+  }
+  .user-mob-up {
+    border-radius: 40px 40px 10px 10px;
+  }
+  .user-mob-down {
+    border-radius: 10px 10px 40px 40px;
   }
   .user-image-cont {
     border-radius: 5vw !important;
