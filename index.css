@@ -64,6 +64,16 @@ p {
     opacity: 1;
   }
 }
+.overlay {
+  position: fixed;
+  z-index: 1000000;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 body nav {
   width: 100%;
